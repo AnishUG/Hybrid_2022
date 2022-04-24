@@ -33,14 +33,14 @@ public class LoginTest extends BaseClass {
 		ReportEx.report.flush();
 	}
 	
-	@Test
-	
-	public void failtest () {
+//	@Test
+//	
+//	public void failtest () {
+//		
+//		Assert.assertEquals(driver.getTitle(), "JavaByKiran | ABC");
+//		
 		
-		Assert.assertEquals(driver.getTitle(), "JavaByKiran | ABC");
-		
-		
-	}
+//	}
 	
 	@Test
 	public void Login () {
@@ -49,16 +49,18 @@ public class LoginTest extends BaseClass {
 		
 		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Dashboard");
 		
-		
-	}
-	
-@Test
-	
-	public void Skip () {
-		
-	throw new SkipException("skipping test case");
+		driver.navigate().refresh();
 		
 		
 	}
+	
+//@Test
+//	
+//	public void Skip () {
+//		
+//	throw new SkipException("skipping test case");
+//		
+//		
+//	}
 
 }

@@ -2,16 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<listeners> 
+	<listeners>
+		<listener class-name="com.listeners.ListnersEx" />
+	</listeners>
+	<test name="Test">
+		<classes>
+		<class name="com.test.LoginTest" />
+			<class name="com.test.RegistrationTest" />
+			
+			<class name="com.test.UsersTest" />
+			<class name="com.test.UsefullinkTest" />
+			<class name="com.test.DownloadPageTest" />
 
-<listener class-name="com.listeners.ListnersEx"/>
 
 
-</listeners>
-
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.test.LoginTest"/>
-    </classes>
-  </test> <!-- Test -->
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
